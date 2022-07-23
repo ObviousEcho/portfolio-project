@@ -1,3 +1,104 @@
+/*define color variables*/
+:root {
+    --dark: #4a4747;
+    --light-text: #fff;
+}
+
+/*reset browser default margin*/
 body {
     margin: 0;
 }
+
+/*title block styling*/
+header {
+    display: flex;
+    justify-content: space-right;
+    align-items: center;
+    background-image: url("../images/paneling.jpg");
+    color: var(--light-text);
+    font-weight: 900;
+}
+
+header h1,
+header h2 {
+    flex: auto;
+}
+
+header h1 {
+    padding-left: 30px;
+}
+
+header h2 {
+    text-align: right;
+    padding-right: 30px;
+}
+
+/*nav menu styling*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+/*flexbox settings for About, Projects, and Contact sections*/
+
+.about {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-left: 10%;
+}
+
+.projects,
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/*About section styling*/
+.about-cont {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/laminate.jpg);
+    box-sizing: border-box;
+}
+
+.about-flex-1 {
+    display: flex;
+    flex: 1 0 20%;
+    align-items: center;
+}
+
+.about-flex-1 img {
+    display: flex;
+    height: 95%;
+}
+
+.about-flex-2 {
+    flex: 1 0 60%;
+    color: var(--light-text);
+}
+
+.about-flex-2 h2 {
+    text-align: center;
+}
+
+/*Project section styling*/
+.proj-title {
+    text-align: center;
+}
+
+.project-flex {
+    display: flex;
+    flex: 1 0 40%;
+}
+
+/*Contact section styling*/

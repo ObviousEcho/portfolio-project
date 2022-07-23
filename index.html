@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css"/>
-        <title>Andrew Stehno's Portfolio</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css" />
+    <title>Andrew Stehno's Portfolio</title>
+</head>
 
-    <body>
-        <header>
-            <h1>Andrew Stehno</h1>
-            <h1>Developer</h1>
-        </header>
+<body>
+    <!-- Title block -->
+    <header>
+        <h1>Andrew Stehno</h1>
+        <h2>Developer</h2>
+    </header>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <article id="about">
-                <section class="about-flex">
-                    <img src="https://picsum.photos/200/300" alt="" width="" height="">
+    <main>
+        <!-- About Me section with profile pic -->
+        <div class="about-cont">
+            <article id="about" class="about">
+                <section class="about-flex-1">
+                    <img src="https://picsum.photos/500/600" alt="" width="" height="">
                 </section>
-                <section class="about-flex">
-                        <h2>About</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ratione dignissimos eum deleniti, in, atque quod explicabo minus architecto molestiae, facilis blanditiis quia repellat quaerat temporibus quidem excepturi voluptatem quisquam!
-                        </p>
-                </section>
-            </article>
-
-            <article id="projects">
-                <section class="project-flex">
-                    <img src="https://picsum.photos/50" alt="" width="" height="">
-                    <p>Text</p>
-                </section>
-
-                <section class="project-flex">
-                    <img src="https://picsum.photos/50" alt="" width="" height="">
-                    <p>Text</p>
-                </section>
-
-                <section class="project-flex">
-                    <img src="https://picsum.photos/50" alt="" width="" height="">
-                    <p>Text</p>
-                </section>
-
-                <section class="project-flex">
-                    <img src="https://picsum.photos/50" alt="" width="" height="">
-                    <p>Text</p>
+                <section class="about-flex-2">
+                    <h2>About</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ratione dignissimos eum
+                        deleniti, in, atque quod explicabo minus architecto molestiae, facilis blanditiis quia repellat
+                        quaerat temporibus quidem excepturi voluptatem quisquam!
+                    </p>
                 </section>
             </article>
+        </div>
 
-            <article id="contact">
-                <section>
-                    <p>Email</p>
-                </section>
-            </article>
-        </main>
+        <h2 class="proj-title">Projects</h2>
+        <!-- Project placeholders -->
+        <article id="projects" class="projects">
+            <section class="project-flex">
+                <img src="https://picsum.photos/50" alt="" width="" height="">
+                <p>Text</p>
+            </section>
 
-        <footer>
-            <p>A fancy quote!</p>
-        </footer>
-    </body>
+            <section class="project-flex">
+                <img src="https://picsum.photos/50" alt="" width="" height="">
+                <p>Text</p>
+            </section>
+
+            <section class="project-flex">
+                <img src="https://picsum.photos/50" alt="" width="" height="">
+                <p>Text</p>
+            </section>
+
+            <section class="project-flex">
+                <img src="https://picsum.photos/50" alt="" width="" height="">
+                <p>Text</p>
+            </section>
+        </article>
+
+        <!-- How to get in touch -->
+        <article id="contact" class="contact">
+            <section>
+                <p>Email</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>A fancy quote!</p>
+    </footer>
+</body>
+
 </html>
