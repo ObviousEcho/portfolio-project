@@ -4,24 +4,26 @@
     --light-text: #fff;
 }
 
-/*reset browser default margin*/
+/*reset browser default margin and establish body properties and view port height*/
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /*title block styling*/
 header {
     display: flex;
-    justify-content: space-right;
+    justify-content: right;
     align-items: center;
-    background-image: url("../images/paneling.jpg");
+    background-image: url(../images/laminate.jpg);
     color: var(--light-text);
     font-weight: 900;
 }
 
-header h1,
-header h2 {
-    flex: auto;
+header h1 {
+    flex: 1;
 }
 
 header h1 {
@@ -30,7 +32,7 @@ header h1 {
 
 header h2 {
     text-align: right;
-    padding-right: 30px;
+    padding-right: 60px;
 }
 
 /*nav menu styling*/
@@ -47,11 +49,18 @@ nav ul li {
     color: var(--dark);
 }
 
+li a:hover,
+li a:link {
+    text-decoration: none;
+    color: rgba(0, 136, 255, 0.565);
+}
+
 /*flexbox settings for About, Projects, and Contact sections*/
 
 .about {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
     margin-left: 10%;
@@ -66,25 +75,21 @@ nav ul li {
 
 /*About section styling*/
 .about-cont {
-    width: 100%;
-    height: 600px;
-    background-image: url(../images/laminate.jpg);
-    box-sizing: border-box;
+    background-image: url("../images/paneling.jpg");
 }
 
 .about-flex-1 {
     display: flex;
-    flex: 1 0 20%;
+    flex: 1;
     align-items: center;
 }
 
 .about-flex-1 img {
     display: flex;
-    height: 95%;
 }
 
 .about-flex-2 {
-    flex: 1 0 60%;
+    flex: 1;
     color: var(--light-text);
 }
 
@@ -110,27 +115,35 @@ nav ul li {
 
 /*footer styling*/
 footer {
-    position: relative;
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-image: url(../images/sand.jpg);
-    height: 100px;
     color: var(--light-text);
 }
 
-footer h3 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+footer section {
+    display: flex;
+    align-items: center;
 }
 
 .author {
-    display: inline-block;
-    height: 50px;
+    display: flex;
+    flex: 1;
     border: solid var(--light-text) 2px;
-    padding: 0 10px 0 10px;
+    margin: 20px;
+    padding: 0 10px;
     color: var(--light-text);
-    position: absolute;
-    bottom: 25%;
-    right: 30%;
+    font-size: 12px;
+}
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 425px) {
+    
 }
