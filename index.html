@@ -9,89 +9,94 @@
 </head>
 
 <body>
-    <
-    <!-- Title block -->
-    <header>
-        <h1>Andrew Stehno</h1>
-    </header>
+    < <!-- Title block -->
+        <header>
+            <h1>Andrew Stehno</h1>
+        </header>
 
-    <!-- Navigation menu -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <!-- About Me section with profile pic -->
-        <div class="about-cont">
-            <article id="about" class="about">
-                <section class="about-flex-1">
-                    <img src="./Assets/images/me.jpg" alt="photo of author" width="400px">
+        <main>
+            <!-- About Me section with profile pic -->
+            <div class="about-cont">
+                <article id="about" class="about">
+                    <section class="about-flex-1">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="./Assets/images/me-large.jpg">
+                            <source media="(min-width: 426px)" srcset="./Assets/images/me-medium.jpg">
+                            <source media="(min-width: 200px)" srcset="./Assets/images/me-small.jpg">
+                            <img src="./Assets/images/me.jpg" alt="photo of author" width="400px">
+                        </picture>
+                    </section>
+                    <section class="about-flex-2">
+                        <h2>About</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ratione dignissimos eum
+                            deleniti, in, atque quod explicabo minus architecto molestiae, facilis blanditiis quia
+                            repellat
+                            quaerat temporibus quidem excepturi voluptatem quisquam!
+                        </p>
+                    </section>
+                </article>
+            </div>
+
+            <h2 class="proj-title">Projects</h2>
+            <!-- Project placeholders -->
+            <article id="projects" class="projects">
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
                 </section>
-                <section class="about-flex-2">
-                    <h2>About</h2>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ratione dignissimos eum
-                        deleniti, in, atque quod explicabo minus architecto molestiae, facilis blanditiis quia repellat
-                        quaerat temporibus quidem excepturi voluptatem quisquam!
-                    </p>
+
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
+                </section>
+
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
+                </section>
+
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
+                </section>
+
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
+                </section>
+
+                <section class="project-flex">
+                    <img src="https://picsum.photos/50" alt="" width="" height="">
+                    <p>Text</p>
                 </section>
             </article>
-        </div>
 
-        <h2 class="proj-title">Projects</h2>
-        <!-- Project placeholders -->
-        <article id="projects" class="projects">
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
+            <!-- How to get in touch -->
+            <article id="contact" class="contact">
+                <section>
+                    <p>Email</p>
+                </section>
+            </article>
+        </main>
 
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
-
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
-
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
-
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
-
-            <section class="project-flex">
-                <img src="https://picsum.photos/50" alt="" width="" height="">
-                <p>Text</p>
-            </section>
-        </article>
-
-        <!-- How to get in touch -->
-        <article id="contact" class="contact">
+        <footer>
             <section>
-                <p>Email</p>
+                <h3>"Go as far as you can see; when you get there, you'll be able to see further."</h3>
+                <div class="author">
+                    <p>Thomas Carlyle</p>
+                </div>
             </section>
-        </article>
-    </main>
-
-    <footer>
-        <section>
-            <h3>"Go as far as you can see; when you get there, you'll be able to see further."</h3>
-            <div class="author">
-                <p>Thomas Carlyle</p>
-            </div>
-        </section>
-    </footer>
+        </footer>
 </body>
 
 </html>
