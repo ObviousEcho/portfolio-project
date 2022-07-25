@@ -38,6 +38,7 @@ header h2 {
 /*nav menu styling*/
 nav ul {
     display: flex;
+    flex: 1 1 auto;
     justify-content: center;
     gap: 40px;
 }
@@ -90,7 +91,14 @@ li a:link {
 
 /*Project section styling*/
 #projects {
-    margin: 0 20px;
+    margin: 0 10%;
+}
+
+.project-main:hover,
+.project-flex:hover {
+    box-shadow: inset 0px 0px 5px
+    var(--dark), 0 0 10px
+    var(--dark);
 }
 
 .projects {
@@ -184,6 +192,10 @@ footer section {
 @media screen and (max-width: 425px) {
     header h1 {
         text-align: center;
+    }
+
+    nav ul {    
+        gap: 5%;
     }
 
     .about {
