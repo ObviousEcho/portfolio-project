@@ -2,6 +2,7 @@
 :root {
     --dark: #4a4747;
     --light-text: #fff;
+    --hover: rgba(0, 136, 255, 0.565);
 }
 
 /*reset browser default margin and establish body properties and view port height*/
@@ -53,7 +54,7 @@ nav ul li {
 li a:hover,
 li a:link {
     text-decoration: none;
-    color: rgba(0, 136, 255, 0.565);
+    color: var(--hover);
 }
 
 /*About section styling*/
@@ -145,8 +146,22 @@ li a:link {
 /*Contact section styling*/
 .contact {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+}
+
+.contact section h2,
+.contact section h3{
+    display: flex;
+    justify-content: space-around;
+    color: var(--dark);
+}
+
+.contact h3 a:hover,
+.contact h3 a:link {
+    /*color: var(--hover);*/
+    text-decoration: none;
 }
 
 /*footer styling*/
