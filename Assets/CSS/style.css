@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
 /*title block styling*/
@@ -149,19 +150,20 @@ li a:link {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin: 20px 0 20px 0;
 }
 
 .contact section h2,
-.contact section h3{
+.contact section p{
     display: flex;
     justify-content: space-around;
     color: var(--dark);
 }
 
-.contact h3 a:hover,
-.contact h3 a:link {
-    /*color: var(--hover);*/
-    text-decoration: none;
+.contact section p {
+    font-size: 1.5em;
+    font-family: "Segoe Script", "Lucida Handwriting", cursive;
+    transform: rotate(-5deg);
 }
 
 /*footer styling*/
