@@ -93,15 +93,9 @@ li a:link {
 
 /*Project section styling*/
 #projects {
-    margin: 0 10%;
+    margin: 0 20px;
 }
 
-.project-main:hover,
-.project-flex:hover {
-    box-shadow: inset 0px 0px 5px
-    var(--dark), 0 0 10px
-    var(--dark);
-}
 
 .projects {
     display: flex;
@@ -117,12 +111,28 @@ li a:link {
     display: flex;
     flex: 1 1 auto;
     min-width: 200px;
-    border: solid var(--dark) 4px;
     margin: 20px;
+    justify-content: center;
 }
 
 .project-main img {
     max-width: 100%;
+}
+
+.project-main-inner:hover,
+.project-flex-inner:hover {
+    box-shadow: inset 0px 0px 5px
+    var(--dark), 0 0 10px
+    var(--dark);
+}
+
+.project-main-inner,
+.project-flex-inner {
+    border: solid var(--dark) 5px;
+}
+
+.project-main-inner h3 {
+    text-align: center;
 }
 
 .proj-row {
@@ -135,13 +145,18 @@ li a:link {
 .project-flex {
     display: flex;
     flex: 1 1 auto;
+    justify-content: center;
+    align-items: stretch;
     min-width: 200px;
-    border: solid var(--dark) 4px;
     margin: 20px;
 }
 
 .project-flex img {
     max-width: 100%;
+}
+
+.project-flex-inner h3 {
+    text-align: center;
 }
 
 /*Contact section styling*/
@@ -198,6 +213,10 @@ footer section {
         width: auto;
         margin-left: 0;
         padding: 0 10px;
+    }
+
+    .contact {
+        margin: 0 10px;
     }
 
     footer {
