@@ -1,7 +1,6 @@
 # portfolio-project
 
-![screen grab of portfolio]
-(./Assets/images/Screenshot.png)
+![screen grab of portfolio](./Assets/images/Screenshot.png)
 
 ---
 
@@ -34,6 +33,6 @@ This portfolio is one of many to come I'm sure.  It will no doubt evolve.  In it
 
 One of the challenges I encountered while building this project, was simply the design in general.  While I was provided with an image template to possibly build off of, I chose to utilize my own design.  I did this to gain perspective of designing a web page from scratch.  The creativity behind web design is a whole other component to web design.  This was eye opening for me.
 
-My deployed portfolio page can be viewed [HERE](https://obviousecho.github.io/portfolio-project/).
+My deployed portfolio page can be viewed[HERE](https://obviousecho.github.io/portfolio-project/).
 
 Thanks for reading!
