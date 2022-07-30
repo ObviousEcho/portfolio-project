@@ -91,6 +91,10 @@ li a:link {
     text-align: center;
 }
 
+.about-flex-2 p {
+    font-size: 20px;
+}
+
 /*Project section styling*/
 #projects {
     margin: 0 20px;
@@ -212,6 +216,7 @@ footer section {
     .about {
         width: auto;
         margin-left: 0;
+        flex-direction: column;
         padding: 0 10px;
     }
 
@@ -234,11 +239,11 @@ footer section {
         gap: 5%;
     }
 
-    .about {
-        width: auto;
-        margin-left: 0;
-        flex-direction: column;
-    }
+    // .about {
+    //     width: auto;
+    //     margin-left: 0;
+    //     flex-direction: column;
+    // }
 
     
 }
